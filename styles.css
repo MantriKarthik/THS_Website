@@ -18,10 +18,13 @@ body {
     padding: 1rem 0;
   }
   
-  .logo {
-    font-size: 3.0rem;
-    font-weight: bold;
-  }
+.logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
   
   nav ul {
     list-style: none;
