@@ -348,8 +348,8 @@ header > * {
       background-color: #0d1b2a;
       color: white;
       text-align: center;
-      padding: 0.5rem 0; /* Reduced padding for a narrower footer */
-      margin-top: 2rem;
+      padding: 0.5rem 0; 
+      margin-top: 1rem;
     }
 
     #thankyou-message {
