@@ -3,8 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>THS - Home</title>
+  <title>THS - Single Page</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    header {
+      background-color: #0d1b2a;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 3.0rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero-banner {
+      background-image: url('istockphoto-hydraulic_pump.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+      z-index: 1;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.5rem;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #0d1b2a;
+      margin-bottom: 1rem;
+    }
+
+    .section p,
+    .section form {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.75rem;
+      background-color: #415a77;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1b263b;
+    }
+
+    footer {
+      background-color: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,22 +152,52 @@
       <h1 class="logo">THS</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
- <section class="hero-banner">
-  <div class="hero-text">
-    <h1>Welcome to THS</h1>
-    <p>Your trusted partner for Spear Parts and Cladding Solutions</p>
-  </div>
-</section>
+  <section class="hero-banner" id="home">
+    <div class="hero-text">
+      <h1>Welcome to THS</h1>
+      <p>Your trusted partner for Spear Parts and Cladding Solutions</p>
+    </div>
+  </section>
 
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>THS is a leading provider of corporate solutions. We focus on delivering quality and reliability to our clients.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/your@email.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2>Image Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://via.placeholder.com/300" alt="Gallery image" />
+        <img src="https://via.placeholder.com/300" alt="Gallery image" />
+        <img src="https://via.placeholder.com/300" alt="Gallery image" />
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
