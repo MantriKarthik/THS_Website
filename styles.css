@@ -43,10 +43,10 @@ header > * {
 
   
   .logo {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
-  margin: 0 auto;
+  margin: 0;
+  text-align: left;
 }
   
   nav ul {
@@ -132,19 +132,6 @@ header > * {
     background-color: #1b263b;
   }
   
-.hero-banner {
-  background-image: url('images/istockphoto-hydraulic_pump.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
-
 .hero-banner::after {
   content: "";
   position: absolute;
@@ -187,8 +174,10 @@ header > * {
     }
 
     .logo {
-      font-size: 3.0rem;
+      font-size: 2.5rem;
       font-weight: bold;
+      margin: 0;
+      text-align: left;
     }
 
     nav ul {
@@ -354,4 +343,17 @@ header > * {
       border-radius: 5px;
       margin-bottom: 1em;
       text-align: center;
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+    }
+
+    .ths-logo img {
+      height: 60px;
+      width: auto;
+      display: block;
     }
