@@ -234,34 +234,6 @@ header > * {
       display: block;
     }
   
-    #home {
-      background-image: url('images/background.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  
-    #about {
-      background-image: url('images/background.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  
-    #contact {
-      background-image: url('images/background.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  
-    #gallery {
-      background-image: url('images/background.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  
     .section.img-right::after {
   content: "";
   position: absolute;
