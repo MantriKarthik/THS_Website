@@ -261,3 +261,37 @@ header > * {
       background-position: center;
       background-repeat: no-repeat;
     }
+  
+    .section.img-right::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 40%;
+  background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+  transition: background-image 0.3s ease;
+  z-index: -1;
+}
+
+.section.img-right:hover::after {
+  background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80');
+}
+
+.section.img-left::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 40%;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+  transition: background-image 0.3s ease;
+  z-index: -1;
+}
+
+.section.img-left:hover::before {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');
+}
+
+/* Ensure section is positioned relative for pseudo-elements */
+.section {
+  position: relative;
+  overflow: hidden;
+}
