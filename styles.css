@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff; /* Make all text white */
+    color: #fff;
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
@@ -18,10 +18,10 @@ body {
   
 header {
   color: white;
-  padding: 4rem 0; /* Huge header */
+  padding: 4rem 0;
   text-align: center;
   position: relative;
-  background-image: url('images/background.png'); /* Current header image */
+  background-image: url('images/background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@ header::before {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
 
@@ -93,7 +93,7 @@ header > * {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(13, 27, 42, 0.5); /* Overlay for readability */
+    background: rgba(13, 27, 42, 0.5);
     z-index: 1;
   }
   
@@ -135,13 +135,14 @@ header > * {
   z-index: 1;
   min-height: 60vh;
   padding: 3rem 0;
+  overflow: hidden;
 }
 
 .section::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5); /* dark overlay for readability */
+  background: rgba(0,0,0,0.5);
   z-index: -1;
 }
 
@@ -205,10 +206,10 @@ header > * {
       background-color: #0d1b2a;
       color: white;
       text-align: center;
-      padding: 0.2rem 0;   /* Less vertical space inside footer */
-      margin-top: 0.5rem;  /* Footer closer to above content */
-      font-size: 0.9rem;   /* Slightly smaller text for compact look */
-      line-height: 1.2;    /* Reduce line height for less height */
+      padding: 0.2rem 0;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1.2;
     }
   
     #thankyou-message {
@@ -260,10 +261,4 @@ header > * {
 
 .section.img-left:hover::before {
   background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');
-}
-
-/* Ensure section is positioned relative for pseudo-elements */
-.section {
-  position: relative;
-  overflow: hidden;
 }
