@@ -235,7 +235,7 @@ header > * {
     }
   
     #home {
-      background-image: url('images/header_image.png');
+      background-image: url('background.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
