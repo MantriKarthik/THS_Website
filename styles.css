@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff; /* Make all text white */
+    color: #111111; /* Make all text white */
     background-image: url('images/background.png'); /* Use your background image */
     background-size: cover;
     background-position: center;
