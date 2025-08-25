@@ -21,7 +21,7 @@ header {
   padding: 4rem 0; /* Huge header */
   text-align: center;
   position: relative;
-  background-image: url('images/header_image.png');
+  background-image: url('images/background.png'); /* Current header image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -235,7 +235,7 @@ header > * {
     }
   
     #home {
-      background-image: url('background.png');
+      background-image: url('images/background.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
