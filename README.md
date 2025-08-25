@@ -38,6 +38,7 @@ To view the single-page website, follow these steps:
 
 - HTML
 - CSS
+- Javascript
 
 ## License
 
