@@ -93,7 +93,7 @@ header > * {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(13, 27, 42, 0.5);
+    background: rgba(250, 251, 251, 0.5);
     z-index: 1;
   }
   
@@ -146,17 +146,22 @@ header > * {
   z-index: -1;
 }
 
-    .section h2 {
-      font-size: 2rem;
-      color: #0d1b2a;
-      margin-bottom: 1rem;
-    }
+      .section h2 {
+        font-size: 2rem;
+        color: #0d1b2a;
+        margin-bottom: 1rem;
+        text-align: left;
+      }
   
-    .section p,
-    .section form {
-      max-width: 700px;
-      margin: auto;
-    }
+      .section p,
+      .section form {
+        max-width: 700px;
+        margin-left: 0;
+        margin-right: auto;
+        text-align: left;
+        position: relative;
+        z-index: 2;
+      }
   
     .gallery-grid {
       display: grid;
