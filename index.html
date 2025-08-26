@@ -10,34 +10,46 @@
 </head>
 <body>
   <header>
-    <div class="container header-flex">
-      <a href="#home" class="ths-logo">
-        <img src="images/ths-logo.png" alt="THS Logo" />
-      </a>
-      <h1 class="logo">Tipper and Hydraulic Solutions</h1>
-  <!-- Navigation removed for a cleaner look -->
+    <div class="container header-flex" style="display: flex; flex-direction: column; align-items: center;">
+      <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 1.2rem; margin-bottom: 0.5rem;">
+        <a href="#home" class="ths-logo">
+          <img src="images/ths-logo.png" alt="THS Logo" />
+        </a>
+        <!-- Add another logo image here -->
+        <a href="#home" class="other-logo">
+          <img src="images/Hyva-logo.png" alt="Other Logo" />
+        </a>
+      </div>
+      <h1 class="logo" style="color:#fff; text-shadow: 0 2px 8px rgba(0,0,0,0.7); font-family:'Montserrat',Arial,sans-serif; text-align:center;">Tipper and Hydraulic Solutions</h1>
+      <nav class="main-header-nav" style="justify-content: center;">
+        <a href="products.html" target="_blank">Products & Services</a>
+        <a href="#contact">Contact Us</a>
+        <a href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
+        <a href="tel:+919876543210" style="font-weight:bold;">Call: +91 98765 43210</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
     </div>
   </header>
 
   <section class="hero-banner" id="home">
-    <div class="hero-text">
-      <h1 style="color:#fff; text-shadow: 0 2px 8px rgba(0,0,0,0.7);">Welcome to THS</h1>
-      <p style="color:#f0f0f0; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">Your trusted partner for HYVA products</p>
-      <a href="https://www.hyva.com/en-in/solutions/" class="quote-btn" target="_blank" rel="noopener noreferrer">Click here to view our Products & Solutions</a>
+    <div style="display:flex; align-items:center; justify-content:center; width:100%;">
+      <div class="hero-text" style="flex:1;">
+        <h1 style="color:#fff; text-shadow: 0 2px 8px rgba(0,0,0,0.7);">Welcome to THS</h1>
+        <p style="color:#f0f0f0; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">Your trusted partner for HYVA products</p>
+        <a href="https://www.hyva.com/en-in/solutions/" class="quote-btn" target="_blank" rel="noopener noreferrer">Click here to view our Products & Solutions</a>
+      </div>
     </div>
   </section>
 
   <section class="section img-right" id="about">
     <div class="container slide-in-right" style="position:relative;">
-      <div style="position:absolute;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.5);z-index:1;"></div>
-      <h2 style="position:relative;z-index:2;color:#fff;">About Us</h2>
-      <p style="position:relative;z-index:2;color:#f0f0f0;">THS is a leading provider of corporate solutions. We focus on delivering quality and reliability to our clients.</p>
-    </div>
+      <h2 style="position:relative;z-index:2;color:#fff; text-shadow: 0 2px 8px rgba(0,0,0,0.7);">About Us</h2>
+      <p style="position:relative;z-index:2;color:#f0f0f0; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">THS is a leading provider of corporate solutions. We focus on delivering quality and reliability to our clients.</p>
   </section>
 
   <section class="section" id="contact">
   <div class="container slide-in-right">
-      <h2>Contact Us</h2>
+  <h2 style="color:#ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.8); font-family:'Montserrat',Arial,sans-serif;">Contact Us</h2>
       <div id="thankyou-message" style="display:none; background:#dff0d8; color:#3c763d; padding:1em; border-radius:5px; margin-bottom:1em; text-align:center;">
         Thank you! We will get back to you.
       </div>
@@ -54,7 +66,7 @@
 
   <section class="section" id="gallery">
   <div class="container slide-in-right">
-      <h2>Image Gallery</h2>
+  <h2 style="color:#ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.8); font-family:'Montserrat',Arial,sans-serif;">Image Gallery</h2>
       <div class="gallery-grid">
         <img src="https://via.placeholder.com/300" alt="Gallery image" />
         <img src="https://via.placeholder.com/300" alt="Gallery image" />
