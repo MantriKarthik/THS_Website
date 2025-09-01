@@ -110,5 +110,38 @@
     window.addEventListener('scroll', revealOnScroll);
     window.addEventListener('load', revealOnScroll);
   </script>
+
+  <form id="login-form">
+    <input type="text" name="username" placeholder="Username" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+  </form>
+  <div id="login-result"></div>
+  <script>
+document.getElementById('login-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const username = e.target.username.value;
+  const password = e.target.password.value;
+  const res = await fetch('http://127.0.0.1:5000/api/login', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({username, password})
+  });
+  const data = await res.json();
+  if (res.ok) {
+    document.getElementById('login-result').textContent = 'Login successful!';
+    // Save token for future requests
+    localStorage.setItem('access_token', data.access_token);
+  } else {
+    document.getElementById('login-result').textContent = data.msg || 'Login failed';
+  }
+});
+
+const token = localStorage.getItem('access_token');
+const res = await fetch('http://127.0.0.1:5000/api/catalog', {
+  headers: { 'Authorization': 'Bearer ' + token }
+});
+const catalog = await res.json();
+</script>
 </body>
 </html>

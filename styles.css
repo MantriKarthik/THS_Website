@@ -357,3 +357,48 @@ footer {
 .section.img-left:hover::before {
   background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');
 }
+form#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+form#login-form input {
+  padding: 0.75rem;
+  border: 1px solid #bfc9d1;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+form#login-form button {
+  padding: 0.75rem;
+  background: linear-gradient(90deg, #415a77 60%, #274060 100%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(65,90,119,0.08);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+form#login-form button:hover {
+  background: linear-gradient(90deg, #1b263b 60%, #415a77 100%);
+  box-shadow: 0 4px 16px rgba(65,90,119,0.15);
+}
+#login-result {
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: rgba(0, 191, 255, 0.1);
+  color: #007bff;
+  border-radius: 4px;
+  text-align: center;
+  display: none;
+}
